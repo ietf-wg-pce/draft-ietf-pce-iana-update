@@ -275,7 +275,7 @@ Table of Contents
    moved to IETF work targeting publication on the Standards Track, each
    pair of Error-Type / Error-value will need to be assigned by IANA
    from the registry.  In some cases, this will involve assigning a new
-   Error-Type with its subtended Error-values.  In other case, use may
+   Error-Type with its subtended Error-values.  In other cases, use may
    be made of an existing Error-Type with new subtended Error-values
    being assigned.  The resulting change to code in an implementation is
    as simple as changing the numeric values of the Error-Types and
