@@ -528,7 +528,7 @@ Appendix C.  Consideration of RFC 8356
 
 Appendix D.  Contributor
 
-   Haomian Zheng Huawei Technologies Email: zhenghaomian@huawei.com
+   Haomian Zheng\ Huawei Technologies\ Email: zhenghaomian@huawei.com
 
 Authors' Addresses
 
