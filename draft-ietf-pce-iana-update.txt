@@ -92,6 +92,7 @@ Table of Contents
    Appendix B.  Rationale for updating all registries with Standards
            Action
    Appendix C.  Consideration of RFC 8356
+   Appendix D.  Contributor
    Authors' Addresses
 
 1.  Introduction
@@ -524,6 +525,10 @@ Appendix C.  Consideration of RFC 8356
    the code.  The allowance of experimental Error-Types is a better
    approach that will more easily enable the migration of successful
    experiments onto the Standards Track.
+
+Appendix D.  Contributor
+
+   Haomian Zheng Huawei Technologies Email: zhenghaomian@huawei.com
 
 Authors' Addresses
 
