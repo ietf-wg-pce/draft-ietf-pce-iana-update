@@ -139,7 +139,7 @@ If multiple experiments are taking place at the same time using the same impleme
 
 Note that there is no scope for experimental Error-values within existing non-experimental Error-Types. This reduces the complexity of the registry and implementations. Experiments should place all experimental Error-values under the chosen experimental Error-Types.
 
-If, at some future time, the experiment is declared a success and moved to IETF work targeting publication on the Standards Track, each pair of Error-Type / Error-value will need to be assigned by IANA from the registry. In some cases, this will involve assigning a new Error-Type with its subtended Error-values. In other case, use may be made of an existing Error-Type with new subtended Error-values being assigned. The resulting change to code in an implementation is as simple as changing the numeric values of the Error-Types and Error-values.
+If, at some future time, the experiment is declared a success and moved to IETF work targeting publication on the Standards Track, each pair of Error-Type / Error-value will need to be assigned by IANA from the registry. In some cases, this will involve assigning a new Error-Type with its subtended Error-values. In other cases, use may be made of an existing Error-Type with new subtended Error-values being assigned. The resulting change to code in an implementation is as simple as changing the numeric values of the Error-Types and Error-values.
 
 ## Handling of Unknown Experimentation
 
