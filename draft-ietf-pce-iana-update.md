@@ -46,7 +46,6 @@ normative:
   RFC9050:
   RFC9059:
   RFC9168:
-  RFC9357:
   RFC9504:
   RFC9603:
   RFC9604:
