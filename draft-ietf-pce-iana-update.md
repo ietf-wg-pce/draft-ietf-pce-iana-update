@@ -24,7 +24,7 @@ author:
   ins: A. Farrel
   name: Adrian Farrel
   org: Old Dog Consulting
-  email: adrian@olddog.co.uk  
+  email: adrian@olddog.co.uk
 
 normative:
   RFC5440:
@@ -32,7 +32,7 @@ normative:
   RFC8231:
   RFC8233:
   RFC8281:
-  RFC8356:  
+  RFC8356:
   RFC8623:
   RFC8664:
   RFC8685:
