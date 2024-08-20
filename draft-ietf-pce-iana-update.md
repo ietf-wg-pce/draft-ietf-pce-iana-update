@@ -178,7 +178,7 @@ is tight but decided against it. The WG's last call and IETF's last call process
 
 # Consideration of RFC 8356
 
-It is worth noting that {{RFC8356}} deliberately chose to make experimental codepoints available only in the PCEP messages, objects, and TLV types registries.  Appendix A of that document gives a brief explanation of why that decision was taken stating that: 
+It is worth noting that {{RFC8356}} deliberately chose to make experimental codepoints available only in the PCEP messages, objects, and TLV types registries.  Appendix A of that document gives a brief explanation of why that decision was taken stating that:
 
 {:quote}
 > The justification for this decision is that, if an
