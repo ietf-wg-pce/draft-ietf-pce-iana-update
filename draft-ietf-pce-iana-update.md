@@ -189,6 +189,6 @@ While it is true that an experimental implementation could assign an experimenta
 
 # Contributor
 
-Haomian Zheng
-Huawei Technologies
+Haomian Zheng\
+Huawei Technologies\
 Email: zhenghaomian@huawei.com
