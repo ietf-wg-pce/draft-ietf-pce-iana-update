@@ -6,10 +6,10 @@ Path Computation Element                                        D. Dhody
 Internet-Draft                                                    Huawei
 Updates: 5440, 8231, 8233, 8281, 8623, 8664,                   A. Farrel
          8685, 8697, 8745, 8733, 8779, 8780,          Old Dog Consulting
-         8800, 8934, 9050, 9059, 9168, 9357,              20 August 2024
+         8800, 8934, 9050, 9059, 9168, 9357,              27 August 2024
          9504, 9603, 9604 (if approved)                                 
 Intended status: Standards Track                                        
-Expires: 21 February 2025
+Expires: 28 February 2025
 
 
       Update to the IANA PCEP Registration Procedures and Allowing
@@ -60,7 +60,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 21 February 2025.
+   This Internet-Draft will expire on 28 February 2025.
 
 Copyright Notice
 
@@ -132,11 +132,11 @@ Table of Contents
 2.  Standards Action PCEP Registries Affected
 
    The following table lists the "Path Computation Element Protocol
-   (PCEP) Numbers" registries whose registration policy has changed from
-   Standards Action to IETF Review.  Affected registries now list this
-   document as a reference.  Where this change is applied to a specific
-   range of values within the particular registry, that range is given
-   in the Remarks column.
+   (PCEP) Numbers" registries whose registration policy will be changed
+   from Standards Action to IETF Review.  Affected registries will list
+   this document as a reference.  Where this change is applied to a
+   specific range of values within the particular registry, that range
+   is given in the Remarks column.
 
      +========================================+===========+=========+
      | Registry                               |    RFC    | Remarks |
@@ -218,8 +218,8 @@ Table of Contents
 
 3.  Experimental Error-Types
 
-   This document allows for the designation of four PCEP Error-Type
-   codepoints (252-255) for Experimental Use.
+   This document requests IANA for the designation of four PCEP Error-
+   Type codepoints (252-255) for Experimental Use.
 
    IANA maintains a registry group called "Path Computation Element
    Protocol (PCEP) Numbers" with a registry named "PCEP-ERROR Object
@@ -493,7 +493,8 @@ Table of Contents
 Appendix A.  Acknowledgments
 
    Thanks to John Scudder for the initial discussion behind this
-   document.
+   document.  Thanks to Ketan Talaulikar, Andrew Stone, and Aijun Wang
+   for the review comments.
 
 Appendix B.  Rationale for updating all registries with Standards Action
 
@@ -505,6 +506,10 @@ Appendix B.  Rationale for updating all registries with Standards Action
    experiments taking over the few code points.  The working group could
    also create a new protocol field and registry for future use as done
    in the past (see [RFC9357]).
+
+   Future registries in the "Path Computation Element Protocol (PCEP)
+   Numbers" registry group should prefer to use "IETF Review" over
+   "Standards Action".
 
 Appendix C.  Consideration of RFC 8356
 
