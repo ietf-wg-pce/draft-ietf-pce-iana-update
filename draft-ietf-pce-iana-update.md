@@ -73,7 +73,7 @@ Further, in Section 9 of {{RFC5440}}, IANA assigns values to the PCEP parameters
 
 # Standards Action PCEP Registries Affected
 
-The following table lists the "Path Computation Element Protocol (PCEP) Numbers" registries whose registration policy has changed from Standards Action to IETF Review. Affected registries now list this document as a reference. Where this change is applied to a specific range of values within the particular registry, that range is given in the Remarks column.
+The following table lists the "Path Computation Element Protocol (PCEP) Numbers" registries whose registration policy will be changed from Standards Action to IETF Review. Affected registries will list this document as a reference. Where this change is applied to a specific range of values within the particular registry, that range is given in the Remarks column.
 
 | Registry | RFC             | Remarks       |
 | :---     |    :----:       |          ---: |
@@ -114,7 +114,7 @@ The following table lists the "Path Computation Element Protocol (PCEP) Numbers"
 
 # Experimental Error-Types
 
-This document allows for the designation of four PCEP Error-Type codepoints (252-255) for Experimental Use.
+This document requests IANA for the designation of four PCEP Error-Type codepoints (252-255) for Experimental Use.
 
 IANA maintains a registry group called "Path Computation Element Protocol (PCEP) Numbers" with a registry named "PCEP-ERROR Object Error Types and Values".  IANA is requested to change the assignment policy for this registry to read:
 
@@ -127,7 +127,7 @@ IANA maintains a registry group called "Path Computation Element Protocol (PCEP)
 
 Additionally, IANA is requested to make an entry in the table as follows:
 
-| Error-Type | Meaning             | Error-value       | Reference
+| Error-Type | Meaning             | Error-value       | Reference |
 | :---     |    :----:       |    :----:  |               ---: |
 | 252-255    | Experimental Use | 0-255 Experimental Use | [this.I-D] |
 
@@ -168,12 +168,13 @@ This memo does not change the Security Considerations for any of the updated RFC
 
 # Acknowledgments
 
-Thanks to John Scudder for the initial discussion behind this document.
+Thanks to John Scudder for the initial discussion behind this document. Thanks to Ketan Talaulikar, Andrew Stone, and Aijun Wang for the review comments.
 
 # Rationale for updating all registries with Standards Action
 
-This specification updates all the registries with the "Standards Action" policy. WG considered keeping "Standards Action" for some registries such as flag fields with limited bits, where the space
-is tight but decided against it. The WG's last call and IETF's last call process should be enough to handle the case of frivolous experiments taking over the few code points. The working group could also create a new protocol field and registry for future use as done in the past (see {{RFC9357}}).
+This specification updates all the registries with the "Standards Action" policy. WG considered keeping "Standards Action" for some registries such as flag fields with limited bits, where the space is tight but decided against it. The WG's last call and IETF's last call process should be enough to handle the case of frivolous experiments taking over the few code points. The working group could also create a new protocol field and registry for future use as done in the past (see {{RFC9357}}).
+
+Future registries in the "Path Computation Element Protocol (PCEP) Numbers" registry group should prefer to use "IETF Review" over "Standards Action".
 
 # Consideration of RFC 8356
 
