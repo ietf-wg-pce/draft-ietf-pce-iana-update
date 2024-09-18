@@ -6,10 +6,10 @@ Path Computation Element                                        D. Dhody
 Internet-Draft                                                    Huawei
 Updates: 5440, 8231, 8233, 8281, 8623, 8664,                   A. Farrel
          8685, 8697, 8745, 8733, 8779, 8780,          Old Dog Consulting
-         8800, 8934, 9050, 9059, 9168, 9357,              27 August 2024
+         8800, 8934, 9050, 9059, 9168, 9357,           18 September 2024
          9504, 9603, 9604 (if approved)                                 
 Intended status: Standards Track                                        
-Expires: 28 February 2025
+Expires: 22 March 2025
 
 
       Update to the IANA PCEP Registration Procedures and Allowing
@@ -26,7 +26,7 @@ Abstract
    8779, 8780, 8800, 8934, 9050, 9059, 9168, 9357, 9504, 9603, and 9604
    for the same.
 
-   Designating “experimental use” sub-ranges within code point
+   Designating "experimental use" sub-ranges within code point
    registries is often beneficial for protocol experimentation in
    controlled environments.  Although the registries for PCEP messages,
    objects, and TLV types have sub-ranges assigned for Experimental Use,
@@ -60,7 +60,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 28 February 2025.
+   This Internet-Draft will expire on 22 March 2025.
 
 Copyright Notice
 
@@ -449,6 +449,11 @@ Table of Contents
               Specification", RFC 9168, DOI 10.17487/RFC9168, January
               2022, <https://www.rfc-editor.org/rfc/rfc9168>.
 
+   [RFC9357]  Xiong, Q., "Label Switched Path (LSP) Object Flag
+              Extension for Stateful PCE", RFC 9357,
+              DOI 10.17487/RFC9357, February 2023,
+              <https://www.rfc-editor.org/rfc/rfc9357>.
+
    [RFC9504]  Lee, Y., Zheng, H., Gonzalez de Dios, O., Lopez, V., and
               Z. Ali, "Path Computation Element Communication Protocol
               (PCEP) Extensions for Stateful PCE Usage in GMPLS-
@@ -484,11 +489,6 @@ Table of Contents
               Considerations for Protocol Extensions", RFC 6709,
               DOI 10.17487/RFC6709, September 2012,
               <https://www.rfc-editor.org/rfc/rfc6709>.
-
-   [RFC9357]  Xiong, Q., "Label Switched Path (LSP) Object Flag
-              Extension for Stateful PCE", RFC 9357,
-              DOI 10.17487/RFC9357, February 2023,
-              <https://www.rfc-editor.org/rfc/rfc9357>.
 
 Appendix A.  Acknowledgments
 
@@ -533,7 +533,9 @@ Appendix C.  Consideration of RFC 8356
 
 Appendix D.  Contributor
 
-   Haomian Zheng\ Huawei Technologies\ Email: zhenghaomian@huawei.com
+   Haomian Zheng
+   Huawei Technologies
+   Email: zhenghaomian@huawei.com
 
 Authors' Addresses
 
