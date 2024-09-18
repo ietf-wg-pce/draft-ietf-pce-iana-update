@@ -1,5 +1,5 @@
 ---
-title: "Update to the IANA PCEP Registration Procedures and Allowing Experimental Error Codes"
+title: "Update to the IANA PCE Communication Protocol (PCEP) Registration Procedures and Allowing Experimental Error Codes"
 abbrev: "PCEP-IANA"
 category: std
 
@@ -143,12 +143,12 @@ If, at some future time, the experiment is declared a success and moved to IETF 
 
 ## Handling of Unknown Experimentation
 
-A PCEP implementation that receives an experimental Error-Type in a PCEP message and does not recognise the Error-Type (i.e., is not part of the experiment) will treat the error as it would treat any other unknown Error-Type (such as from a new protocol extension). An implementation that is notified of a PCEP error will normally close the PCEP session (see [RFC5440]). In general, PCEP implementations are not required to take specific action based on Error-Types, but may log the errors for diagnostic purposes.
+A PCEP implementation that receives an experimental Error-Type in a PCEP message and does not recognize the Error-Type (i.e., is not part of the experiment) will treat the error as it would treat any other unknown Error-Type (such as from a new protocol extension). An implementation that is notified of a PCEP error will normally close the PCEP session (see [RFC5440]). In general, PCEP implementations are not required to take specific action based on Error-Types, but may log the errors for diagnostic purposes.
 
-An implementation that is part of an experiment may receive an experimental Error-Type, but not recognise the Error-value. This could happen because of any of:
+An implementation that is part of an experiment may receive an experimental Error-Type, but not recognize the Error-value. This could happen because of any of:
 
 - A faulty implementation.
-- Two implementations not being synchronised with respect to which Error-values to use in the experiment.
+- Two implementations not being synchronized with respect to which Error-values to use in the experiment.
 - More than one experiment being run at the same time.
 
 As with unknown Error-Types, an implementation receiving an unknown Error-value is not expected to do more than log the received error, and may close the PCEP session.
@@ -168,7 +168,7 @@ This memo does not change the Security Considerations for any of the updated RFC
 
 # Acknowledgments
 
-Thanks to John Scudder for the initial discussion behind this document. Thanks to Ketan Talaulikar, Andrew Stone, and Aijun Wang for the review comments.
+Thanks to John Scudder for the initial discussion behind this document. Thanks to Ketan Talaulikar, Andrew Stone, Samuel Sidor, Quan Xiong, Cheng Li, and Aijun Wang for the review comments.
 
 # Rationale for updating all registries with Standards Action
 
