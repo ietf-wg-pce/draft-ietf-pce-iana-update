@@ -241,14 +241,14 @@ Table of Contents
    Additionally, IANA is requested to make an entry in the table as
    follows:
 
-     +============+==================+==================+============+
-     | Error-Type |     Meaning      |   Error-value    |  Reference |
-     +============+==================+==================+============+
-     | 252-255    | Experimental Use |      0-255       | [this.I-D] |
-     |            |                  | Experimental Use |            |
-     +------------+------------------+------------------+------------+
+     +============+==================+==================+===========+
+     | Error-Type |     Meaning      |   Error-value    | Reference |
+     +============+==================+==================+===========+
+     | 252-255    | Experimental Use |      0-255       |  This I-D |
+     |            |                  | Experimental Use |           |
+     +------------+------------------+------------------+-----------+
 
-                                  Table 2
+                                 Table 2
 
 3.1.  Advice on Experimentation
 
