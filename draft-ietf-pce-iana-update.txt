@@ -6,10 +6,10 @@ Path Computation Element                                        D. Dhody
 Internet-Draft                                                    Huawei
 Updates: 5440, 8231, 8233, 8281, 8623, 8664,                   A. Farrel
          8685, 8697, 8745, 8733, 8779, 8780,          Old Dog Consulting
-         8800, 8934, 9050, 9059, 9168, 9357,           18 September 2024
+         8800, 8934, 9050, 9059, 9168, 9357,           23 September 2024
          9504, 9603, 9604 (if approved)                                 
 Intended status: Standards Track                                        
-Expires: 22 March 2025
+Expires: 27 March 2025
 
 
    Update to the IANA PCE Communication Protocol (PCEP) Registration
@@ -60,7 +60,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 22 March 2025.
+   This Internet-Draft will expire on 27 March 2025.
 
 Copyright Notice
 
@@ -241,14 +241,14 @@ Table of Contents
    Additionally, IANA is requested to make an entry in the table as
    follows:
 
-     +============+==================+==================+============+
-     | Error-Type |     Meaning      |   Error-value    |  Reference |
-     +============+==================+==================+============+
-     | 252-255    | Experimental Use |      0-255       | [this.I-D] |
-     |            |                  | Experimental Use |            |
-     +------------+------------------+------------------+------------+
+     +============+==================+==================+===========+
+     | Error-Type |     Meaning      |   Error-value    | Reference |
+     +============+==================+==================+===========+
+     | 252-255    | Experimental Use |      0-255       |  This I-D |
+     |            |                  | Experimental Use |           |
+     +------------+------------------+------------------+-----------+
 
-                                  Table 2
+                                 Table 2
 
 3.1.  Advice on Experimentation
 
