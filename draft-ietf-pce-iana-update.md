@@ -129,7 +129,7 @@ Additionally, IANA is requested to make an entry in the table as follows:
 
 | Error-Type | Meaning             | Error-value       | Reference |
 | :---     |    :----:       |    :----:  |               ---: |
-| 252-255    | Experimental Use | 0-255 Experimental Use | [this.I-D] |
+| 252-255    | Experimental Use | 0-255 Experimental Use | This I-D |
 
 ## Advice on Experimentation
 
