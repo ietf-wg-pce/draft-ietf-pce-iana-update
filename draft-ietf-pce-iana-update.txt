@@ -6,10 +6,10 @@ Path Computation Element                                        D. Dhody
 Internet-Draft                                                    Huawei
 Updates: 5440, 8231, 8233, 8281, 8623, 8664,                   A. Farrel
          8685, 8697, 8745, 8733, 8779, 8780,          Old Dog Consulting
-         8800, 8934, 9050, 9059, 9168, 9357,           23 September 2024
+         8800, 8934, 9050, 9059, 9168, 9357,             24 October 2024
          9504, 9603, 9604 (if approved)                                 
 Intended status: Standards Track                                        
-Expires: 27 March 2025
+Expires: 27 April 2025
 
 
    Update to the IANA PCE Communication Protocol (PCEP) Registration
@@ -60,7 +60,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 27 March 2025.
+   This Internet-Draft will expire on 27 April 2025.
 
 Copyright Notice
 
@@ -101,8 +101,8 @@ Table of Contents
    group was populated by several RFCs produced by the Path Computation
    Element (PCE) working group.  Most of the registries include the
    "IETF Review" [RFC8126] as registration procedures.  There are a few
-   registries that use "Standards Action".  Thus the values in those
-   registries can be assigned only through Standards Track or Best
+   registries that use "Standards Action".  Thus, the values in those
+   registries can be assigned only through the Standards Track or Best
    Current Practice RFCs in the IETF Stream.  This memo changes the
    policy from Standards Action to IETF Review to allow any type of RFC
    under the IETF stream to make the allocation request.
@@ -216,6 +216,10 @@ Table of Contents
 
                     Table 1: PCEP Registries Affected
 
+   Future registries in the "Path Computation Element Protocol (PCEP)
+   Numbers" registry group should prefer to use "IETF Review" over
+   "Standards Action".
+
 3.  Experimental Error-Types
 
    This document requests IANA for the designation of four PCEP Error-
@@ -290,8 +294,8 @@ Table of Contents
    unknown Error-Type (such as from a new protocol extension).  An
    implementation that is notified of a PCEP error will normally close
    the PCEP session (see [RFC5440]).  In general, PCEP implementations
-   are not required to take specific action based on Error-Types, but
-   may log the errors for diagnostic purposes.
+   are not required to take specific action based on Error-Types but may
+   log the errors for diagnostic purposes.
 
    An implementation that is part of an experiment may receive an
    experimental Error-Type, but not recognize the Error-value.  This
@@ -305,7 +309,7 @@ Table of Contents
    *  More than one experiment being run at the same time.
 
    As with unknown Error-Types, an implementation receiving an unknown
-   Error-value is not expected to do more than log the received error,
+   Error-value is not expected to do more than log the received error
    and may close the PCEP session.
 
 4.  IANA Considerations
@@ -494,7 +498,8 @@ Appendix A.  Acknowledgments
 
    Thanks to John Scudder for the initial discussion behind this
    document.  Thanks to Ketan Talaulikar, Andrew Stone, Samuel Sidor,
-   Quan Xiong, Cheng Li, and Aijun Wang for the review comments.
+   Quan Xiong, Cheng Li, and Aijun Wang for the review comments.  Thanks
+   to Carlos Pignataro for the OPSDIR review.
 
 Appendix B.  Rationale for updating all registries with Standards Action
 
@@ -507,15 +512,11 @@ Appendix B.  Rationale for updating all registries with Standards Action
    also create a new protocol field and registry for future use as done
    in the past (see [RFC9357]).
 
-   Future registries in the "Path Computation Element Protocol (PCEP)
-   Numbers" registry group should prefer to use "IETF Review" over
-   "Standards Action".
-
 Appendix C.  Consideration of RFC 8356
 
    It is worth noting that [RFC8356] deliberately chose to make
    experimental codepoints available only in the PCEP messages, objects,
-   and TLV types registries.  Appendix A of that document gives a brief
+   and TLV type registries.  Appendix A of that document gives a brief
    explanation of why that decision was taken stating that:
 
    |  The justification for this decision is that, if an experiment
