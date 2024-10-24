@@ -67,7 +67,7 @@ Designating "experimental use" sub-ranges within code point registries is often 
 
 # Introduction
 
-The IANA "Path Computation Element Protocol (PCEP) Numbers" registry group was populated by several RFCs produced by the Path Computation Element (PCE) working group. Most of the registries include the "IETF Review" {{RFC8126}} as registration procedures. There are a few registries that use "Standards Action". Thus the values in those registries can be assigned only through Standards Track or Best Current Practice RFCs in the IETF Stream. This memo changes the policy from Standards Action to IETF Review to allow any type of RFC under the IETF stream to make the allocation request.
+The IANA "Path Computation Element Protocol (PCEP) Numbers" registry group was populated by several RFCs produced by the Path Computation Element (PCE) working group. Most of the registries include the "IETF Review" {{RFC8126}} as registration procedures. There are a few registries that use "Standards Action". Thus, the values in those registries can be assigned only through the Standards Track or Best Current Practice RFCs in the IETF Stream. This memo changes the policy from Standards Action to IETF Review to allow any type of RFC under the IETF stream to make the allocation request.
 
 Further, in Section 9 of {{RFC5440}}, IANA assigns values to the PCEP parameters.  The allocation policy for each of these parameters specified in RFC 5440 is IETF Review {{RFC8126}}. In consideration of the benefits of conducting experiments with PCEP and the utility of experimental codepoints {{RFC3692}}, codepoint ranges for PCEP messages, objects, and TLV types for Experimental Use {{RFC8126}} are designated in {{RFC8356}}. However, protocol experiments may also need to return protocol error messages indicating experiment-specific error cases.  It will often be the case that previously assigned error codes (in the PCEP-ERROR Object Error Types and Values sub-registry) can be used to indicate the error cases within an experiment, but there may also be cases where new, experimental error codes are needed. In order to run experiments, it is important that the codepoint values used in the experiments do not collide with existing codepoints or any future allocations. This document updates {{RFC5440}} by changing the allocation policy for the registry of PCEP Error-Types to mark some of the codepoints as assigned for Experimental Use.  As stated in {{RFC3692}}, experiments using these codepoints are not intended to be used in general deployments, and due care must be taken to ensure that two experiments using the same codepoints are not run in the same environment.
 
@@ -112,6 +112,8 @@ The following table lists the "Path Computation Element Protocol (PCEP) Numbers"
 | SRv6 Capability Flag Field | {{RFC9603}} | |
 {: title="PCEP Registries Affected"}
 
+Future registries in the "Path Computation Element Protocol (PCEP) Numbers" registry group should prefer to use "IETF Review" over "Standards Action".
+
 # Experimental Error-Types
 
 This document requests IANA for the designation of four PCEP Error-Type codepoints (252-255) for Experimental Use.
@@ -143,7 +145,7 @@ If, at some future time, the experiment is declared a success and moved to IETF 
 
 ## Handling of Unknown Experimentation
 
-A PCEP implementation that receives an experimental Error-Type in a PCEP message and does not recognize the Error-Type (i.e., is not part of the experiment) will treat the error as it would treat any other unknown Error-Type (such as from a new protocol extension). An implementation that is notified of a PCEP error will normally close the PCEP session (see [RFC5440]). In general, PCEP implementations are not required to take specific action based on Error-Types, but may log the errors for diagnostic purposes.
+A PCEP implementation that receives an experimental Error-Type in a PCEP message and does not recognize the Error-Type (i.e., is not part of the experiment) will treat the error as it would treat any other unknown Error-Type (such as from a new protocol extension). An implementation that is notified of a PCEP error will normally close the PCEP session (see [RFC5440]). In general, PCEP implementations are not required to take specific action based on Error-Types but may log the errors for diagnostic purposes.
 
 An implementation that is part of an experiment may receive an experimental Error-Type, but not recognize the Error-value. This could happen because of any of:
 
@@ -151,7 +153,7 @@ An implementation that is part of an experiment may receive an experimental Erro
 - Two implementations not being synchronized with respect to which Error-values to use in the experiment.
 - More than one experiment being run at the same time.
 
-As with unknown Error-Types, an implementation receiving an unknown Error-value is not expected to do more than log the received error, and may close the PCEP session.
+As with unknown Error-Types, an implementation receiving an unknown Error-value is not expected to do more than log the received error and may close the PCEP session.
 
 # IANA Considerations
 
@@ -168,17 +170,15 @@ This memo does not change the Security Considerations for any of the updated RFC
 
 # Acknowledgments
 
-Thanks to John Scudder for the initial discussion behind this document. Thanks to Ketan Talaulikar, Andrew Stone, Samuel Sidor, Quan Xiong, Cheng Li, and Aijun Wang for the review comments.
+Thanks to John Scudder for the initial discussion behind this document. Thanks to Ketan Talaulikar, Andrew Stone, Samuel Sidor, Quan Xiong, Cheng Li, and Aijun Wang for the review comments. Thanks to Carlos Pignataro for the OPSDIR review.
 
 # Rationale for updating all registries with Standards Action
 
 This specification updates all the registries with the "Standards Action" policy. WG considered keeping "Standards Action" for some registries such as flag fields with limited bits, where the space is tight but decided against it. The WG's last call and IETF's last call process should be enough to handle the case of frivolous experiments taking over the few code points. The working group could also create a new protocol field and registry for future use as done in the past (see {{RFC9357}}).
 
-Future registries in the "Path Computation Element Protocol (PCEP) Numbers" registry group should prefer to use "IETF Review" over "Standards Action".
-
 # Consideration of RFC 8356
 
-It is worth noting that {{RFC8356}} deliberately chose to make experimental codepoints available only in the PCEP messages, objects, and TLV types registries.  Appendix A of that document gives a brief explanation of why that decision was taken stating that:
+It is worth noting that {{RFC8356}} deliberately chose to make experimental codepoints available only in the PCEP messages, objects, and TLV type registries.  Appendix A of that document gives a brief explanation of why that decision was taken stating that:
 
 {:quote}
 > The justification for this decision is that, if an
