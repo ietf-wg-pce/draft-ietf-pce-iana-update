@@ -163,14 +163,14 @@ This memo is entirely about updating the IANA "Path Computation Element Protocol
 
 This memo does not change the Security Considerations for any of the updated RFCs. Refer to {{RFC5440}} and {{I-D.ietf-pce-pceps-tls13}} for further details of the specific security measures applicable to PCEP.
 
-{{RFC3692}} asserts that the existence of experimental codepoints introduces no new security considerations. However, implementations accepting experimental error codepoints need to take care in how they parse and process them in case they come, accidentally, from another experiment. Further, an implementation accepting experimental codepoints needs to consider the security aspects of the experimental extensions. {{RFC6709}} provides various design considerations for protocol extensions (including those designated as experimental).
+{{RFC3692}} asserts that the existence of experimental codepoints introduces no new security considerations. However, implementations accepting experimental error codepoints need to consider how they parse and process them in case they come, accidentally, from another experiment. Further, an implementation accepting experimental codepoints needs to consider the security aspects of the experimental extensions. {{RFC6709}} provides various design considerations for protocol extensions (including those designated as experimental).
 
 
 --- back
 
 # Acknowledgments
 
-Thanks to John Scudder for the initial discussion behind this document. Thanks to Ketan Talaulikar, Andrew Stone, Samuel Sidor, Quan Xiong, Cheng Li, and Aijun Wang for the review comments. Thanks to Carlos Pignataro for the OPSDIR review.
+Thanks to John Scudder for the initial discussion behind this document. Thanks to Ketan Talaulikar, Andrew Stone, Samuel Sidor, Quan Xiong, Cheng Li, and Aijun Wang for the review comments. Thanks to Carlos Pignataro for the OPSDIR review. Thanks to Meral Shirazipour for GENART review. Thanks to Paul Kyzivat for ArtArt review. Thanks to Alexey Melnikov for SECDIR review.
 
 # Rationale for updating all registries with Standards Action
 
