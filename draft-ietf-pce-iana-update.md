@@ -31,6 +31,7 @@ normative:
   RFC8126:
   RFC8231:
   RFC8233:
+  RFC8253:
   RFC8281:
   RFC8356:
   RFC8623:
@@ -161,7 +162,7 @@ This memo is entirely about updating the IANA "Path Computation Element Protocol
 
 # Security Considerations
 
-This memo does not change the Security Considerations for any of the updated RFCs. Refer to {{RFC5440}} and {{I-D.ietf-pce-pceps-tls13}} for further details of the specific security measures applicable to PCEP.
+This memo does not change the Security Considerations for any of the updated RFCs. Refer to {{RFC5440}}, {{RFC8253}}, and {{I-D.ietf-pce-pceps-tls13}} for further details of the specific security measures applicable to PCEP.
 
 {{RFC3692}} asserts that the existence of experimental codepoints introduces no new security considerations. However, implementations accepting experimental error codepoints need to consider how they parse and process them in case they come, accidentally, from another experiment. Further, an implementation accepting experimental codepoints needs to consider the security aspects of the experimental extensions. {{RFC6709}} provides various design considerations for protocol extensions (including those designated as experimental).
 
