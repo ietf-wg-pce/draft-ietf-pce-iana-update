@@ -6,10 +6,10 @@ Path Computation Element                                        D. Dhody
 Internet-Draft                                                    Huawei
 Updates: 5440, 8231, 8233, 8281, 8623, 8664,                   A. Farrel
          8685, 8697, 8745, 8733, 8779, 8780,          Old Dog Consulting
-         8800, 8934, 9050, 9059, 9168, 9357,            12 November 2024
+         8800, 8934, 9050, 9059, 9168, 9357,            26 November 2024
          9504, 9603, 9604 (if approved)                                 
 Intended status: Standards Track                                        
-Expires: 16 May 2025
+Expires: 30 May 2025
 
 
    Update to the IANA PCE Communication Protocol (PCEP) Registration
@@ -60,7 +60,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 16 May 2025.
+   This Internet-Draft will expire on 30 May 2025.
 
 Copyright Notice
 
@@ -320,8 +320,9 @@ Table of Contents
 5.  Security Considerations
 
    This memo does not change the Security Considerations for any of the
-   updated RFCs.  Refer to [RFC5440] and [I-D.ietf-pce-pceps-tls13] for
-   further details of the specific security measures applicable to PCEP.
+   updated RFCs.  Refer to [RFC5440], [RFC8253], and
+   [I-D.ietf-pce-pceps-tls13] for further details of the specific
+   security measures applicable to PCEP.
 
    [RFC3692] asserts that the existence of experimental codepoints
    introduces no new security considerations.  However, implementations
@@ -357,6 +358,12 @@ Table of Contents
               Protocol (PCEP) to Compute Service-Aware Label Switched
               Paths (LSPs)", RFC 8233, DOI 10.17487/RFC8233, September
               2017, <https://www.rfc-editor.org/rfc/rfc8233>.
+
+   [RFC8253]  Lopez, D., Gonzalez de Dios, O., Wu, Q., and D. Dhody,
+              "PCEPS: Usage of TLS to Provide a Secure Transport for the
+              Path Computation Element Communication Protocol (PCEP)",
+              RFC 8253, DOI 10.17487/RFC8253, October 2017,
+              <https://www.rfc-editor.org/rfc/rfc8253>.
 
    [RFC8281]  Crabbe, E., Minei, I., Sivabalan, S., and R. Varga, "Path
               Computation Element Communication Protocol (PCEP)
